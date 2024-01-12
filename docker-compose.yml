@@ -5,4 +5,4 @@ services:
     container_name: jaditani-be
     restart: always
     ports:
-      - 6001:3031
+      - 6001:3000
