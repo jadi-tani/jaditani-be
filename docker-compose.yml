@@ -1,0 +1,8 @@
+version: "3"
+services:
+  backend:
+    build: .
+    container_name: jaditani-be
+    restart: always
+    ports:
+      - 6001:3031
