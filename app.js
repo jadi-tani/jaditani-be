@@ -9,6 +9,7 @@ const cors = require('cors')
 
 const indexRouter = require('./routes/index.route');
 const authRouter = require('./routes/auth.route')
+const cropRouter = require('./routes/crop.route')
 
 const app = express();
 
@@ -21,6 +22,7 @@ app.use(express.static(path.join(__dirname, 'public')));
 
 app.use('/', indexRouter);
 app.use('/auth', authRouter)
+app.use('/crops', cropRouter)
 
 app.use(function(req, res, next) {
   next(createError(404));
